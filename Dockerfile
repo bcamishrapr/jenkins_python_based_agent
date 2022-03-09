@@ -6,7 +6,7 @@ USER root
 RUN mkdir -p /etc/pip/
 COPY pip.conf /etc/
 
-RUN apt update && apt install -y  less ca-certificates curl tar bash procps tzdata
+#RUN apt update && apt install -y  less ca-certificates curl tar bash procps tzdata
 
 RUN apt update && apt  install -y   python3 \   
         python3-dev \
@@ -16,6 +16,12 @@ RUN apt update && apt  install -y   python3 \
         git \
         zip \
         gcc \
+        less \
+        curl \
+        tar \
+        bash \
+        procps \
+        tzdata \
         g++ \
         musl-dev \
         libffi-dev \   
