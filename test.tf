@@ -1,8 +1,8 @@
 resource "aws_vpc" "demovpc" {
-  cidr_block       =                                   var.vpc_cidr
-  instance_tenancy =                         "default"
+  cidr_block       = var.vpc_cidr
+  instance_tenancy = "default"
 
   tags = {
-                                                                         Name = "Demo VPC"
+    Name = "Demo VPC"
   }
 }
