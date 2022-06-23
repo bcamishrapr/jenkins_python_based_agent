@@ -28,3 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - uses: hashicorp/setup-terraform@v2
       - run: terraform fmt
+      - run: cat test.tf
